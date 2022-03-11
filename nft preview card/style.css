@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --cardwidth: 350px;
+  --cardheight: 620px;
+  --subwidth: calc(var(--cardwidth) - 40px);
+  --subheight: calc(var(--cardheight) - 40px);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+.maincard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  width: var(--cardwidth);
+  height: var(--cardheight);
+  border-radius: 15px;
+}
+.sub {
+  width: var(--subwidth);
+  height: var(--subheight);
+}
+.maincard-img {
+  width: var(--subwidth);
+  border-radius: 15px;
+}
+.imghover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--subwidth);
+  width: var(--subwidth);
+  position: absolute;
+  opacity: 0;
+}
+.imghover-back {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%);
+  width: var(--subwidth);
+  height: var(--subwidth);
+  opacity: 0.5;
+}
+.eye {
+  position: absolute;
+  z-index: 100;
+}
+.imghover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.heading {
+  font-family: Outfit;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin: 25px 0;
+}
+.heading:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.para {
+  font-size: 18px;
+  font-family: Outfit;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 25px;
+  margin: 25px 0;
+}
+.eth {
+  display: inline-flex;
+  font-size: 18px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+  align-items: center;
+  float: left;
+}
+.time {
+  display: inline-flex;
+  font-size: 18px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+  align-items: center;
+  float: right;
+}
+.divider {
+  color: hsl(215, 32%, 27%);
+}
+.ending {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 15px 0;
+}
+.avatar {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.cred {
+  color: hsl(215, 51%, 70%);
+  font-family: Outfit;
+  font-weight: 300;
+}
+span {
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
